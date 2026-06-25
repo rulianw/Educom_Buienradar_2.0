@@ -1,0 +1,79 @@
+@using WeatherApp
+@model List<StationMeasurement>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/site.css"/>
+    </head>
+    <body>
+        <header> 
+        </header>
+        <img class = "logo" src="~/images/eweather_logo.png" alt="eWeather"/>
+
+        <main>
+            <div class = "dropdown">
+                <form action = "/Buienradar/GetWeatherInfo" method = "get">
+                    <select name = "city" class="dropbtn" onchange = "this.form.submit()"> 
+                        @foreach (var city in ViewBag.Cities){
+                            if(city == ViewBag.SelectedCity){
+                                <option value="@city" selected>@city</option>
+                            } else{
+                                <option value="@city">@city</option>
+                            }
+                        }
+                    </select>
+                </form>
+            </div>
+
+            @if (ViewBag.Measurements != null){
+                foreach(var station in (List<StationMeasurement>)ViewBag.Measurements){
+                    <div class="weather-grid">
+                    <div class="weather-item">
+                        <img src="~/icons/actuele_temperatuur.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.Temperature</span>
+                            <span class="label">Actuele temperatuur</span>
+                        </div>
+                    </div>
+                    <div class="weather-item">
+                        <img src="~/icons/gevoelstemperatuur.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.FeelTemperature</span>
+                            <span class="label">Gevoelstemperatuur</span>
+                        </div>
+                    </div>
+                    <div class="weather-item">
+                        <img src="~/icons/grondtemperatuur.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.GroundTemperature</span>
+                            <span class="label">Grond temperatuur</span>
+                        </div>
+                    </div>
+                    <div class="weather-item">
+                        <img src="~/icons/zonnekracht.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.SunPower</span>
+                            <span class="label">Zonnekracht</span>
+                        </div>
+                    </div>
+                    <div class="weather-item">
+                        <img src="~/icons/regen_laatste_uur.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.RainFallLastHour mm</span>
+                            <span class="label">Regen laatste uur</span>
+                        </div>
+                    </div>
+                    <div class="weather-item">
+                        <img src="~/icons/windrichting.svg" />
+                        <div class="weather-text">
+                            <span class="value">@station.WindDirection</span>
+                            <span class="label">Windrichting</span>
+                        </div>
+                    </div>
+                </div>
+
+                }
+            }
+        </main>
+    </body>
+</html>

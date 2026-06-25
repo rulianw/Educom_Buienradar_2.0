@@ -1,0 +1,126 @@
+header {
+    background-color: #4AD6ED;
+    padding: 10px 20px;
+    height: 40px;              
+    display: flex;             
+    align-items: center;       
+}
+
+.logo {
+    height: 100px;              
+    width: auto;
+    padding: 0;                
+}
+
+body {
+    font-family: helvetica, arial;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+dot
+.dropdown {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 30px 0
+}
+
+.dropdown form {
+    display: flex;
+    justify-content: center;
+}
+
+.dropbtn {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1.5px solid #cccccc;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #4AD6ED;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffed00;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* 3 columns like the mockup */
+    gap: 40px 20px;
+    padding: 40px 60px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.weather-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.weather-item img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;  /* prevents icon from being squished */
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather-item .value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4AD6ED;
+    line-height: 1;
+    margin: 0;
+}
+
+.weather-item .label {
+    font-size: 14px;
+    color: #000000;
+    margin: 4px 0 0 0;
+}
+.graph-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 60px;
+}
+
+.graph-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.graph-controls input[type="date"] {
+    padding: 8px 12px;
+    border: 1.5px solid #cccccc;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.graph-controls button {
+    background-color: #4AD6ED;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}

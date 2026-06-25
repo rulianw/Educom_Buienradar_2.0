@@ -17,3 +17,7 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\xampp\htdocs\weerbericht_casus_2.0\weerbericht_casus_2.0
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/xampp/htdocs/weerbericht_casus_2.0/weerbericht_casus_2.0/Views/Buienradar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpZW5yYWRhclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
