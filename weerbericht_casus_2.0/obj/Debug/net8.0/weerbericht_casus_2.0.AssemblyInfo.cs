@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("weerbericht_casus_2.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36f8f3e956c49ad3db4570a27f1427f54e92cf27")]
 [assembly: System.Reflection.AssemblyProductAttribute("weerbericht_casus_2.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("weerbericht_casus_2.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
